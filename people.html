@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="people.css">
+</head>
+<body>
+<body>
+  <header>
+    <h1>Welcome to Brajrajnagar</h1>
+    <!-- Your navigation or other elements -->
+  </header>
+  
+  <main>
+    <section id="randomPeople">
+      <h2>Meet Some of Our Residents</h2>
+      <div class="people-container">
+        <div class="person">
+          <img src="person1.jpg" alt="Person 1">
+          <p class="profile-name">Sailesh Singh</p>
+        </div>
+        <!-- Add more person divs with images and profile names -->
+      </div>
+      <button id="addPersonBtn">Add New Person</button>
+    </section>
+
+    <!-- Pop-up form for adding new person -->
+    <div id="popupForm" class="popup">
+      <form id="newPersonForm">
+        <h2>Add New Person</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="photo">Photo URL:</label>
+        <input type="text" id="photo" name="photo" required>
+        <button type="submit">Add</button>
+        <button type="button" onclick="closePopup()">Cancel</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="people.js"></script>
+</body>
+</html>
